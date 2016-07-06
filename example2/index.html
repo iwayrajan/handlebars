@@ -1,0 +1,15 @@
+<html>
+<head><title>Example2</title></head>
+<body>
+<div id="container"></div>
+
+<script id="container-template" tyep="text/x-handlebars-template">
+<h1>{{data.title}}</h1>
+<h2>by: {{data.fname}} {{data.lname}}</h2>
+<h3>Address: {{data.address.city}} {{data.address.country}}</h3>
+</script>
+
+<script src="../lib/handlebars-v4.0.5.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head><title>Example3</title></head>
+<body>
+<div id="container"></div>
+
+<script id="container-template" tyep="text/x-handlebars-template">
+	{{#if data.author}}
+		<h1>Author: {{data.author.firstname}} {{data.author.lastname}}</h1>
+	{{else}}
+	<h1>Author: Unknown</h1>
+	{{/if}}
+</script>
+
+<script src="../lib/handlebars-v4.0.5.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

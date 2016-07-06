@@ -1,0 +1,24 @@
+<html>
+<head><title>Example5</title></head>
+<body>
+<div id="container"></div>
+
+<script id="container-template" tyep="text/x-handlebars-template">
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Department</td>
+		</tr>
+		{{#each data.employees}}
+			<tr>
+				<td>{{name}}</td>
+				<td>{{getDepartmentCode department}}</td>
+			</tr>
+		{{/each}}
+	</table>
+</script>
+
+<script src="../lib/handlebars-v4.0.5.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head><title>Example5</title></head>
+<body>
+<div id="container"></div>
+
+<script id="container-template" tyep="text/x-handlebars-template">
+	{{#unless data.license}}
+		<h1>Author: {{data.author.firstname}} {{data.author.lastname}}</h1>
+	{{/unless}}
+</script>
+
+<script src="../lib/handlebars-v4.0.5.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
